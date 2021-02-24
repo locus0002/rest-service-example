@@ -10,9 +10,9 @@ import java.math.BigDecimal;
 public class RoutePath  implements java.io.Serializable {
 
 
-     private Integer id;
-     private Integer destinyId;
-     private Integer externalId;
+     private Long id;
+     private Long destinyId;
+     private Long externalId;
      private int userId;
      private BigDecimal longitude;
      private BigDecimal latitude;
@@ -26,11 +26,11 @@ public class RoutePath  implements java.io.Serializable {
     }
 
 	
-    public RoutePath(Integer destinyId, int userId) {
+    public RoutePath(Long destinyId, int userId) {
         this.destinyId = destinyId;
         this.userId = userId;
     }
-    public RoutePath(Integer destinyId, Integer externalId, int userId, BigDecimal longitude, BigDecimal latitude, String speed, String temperature, String humidity) {
+    public RoutePath(Long destinyId, Long externalId, int userId, BigDecimal longitude, BigDecimal latitude, String speed, String temperature, String humidity) {
        this.destinyId = destinyId;
        this.externalId = externalId;
        this.userId = userId;
@@ -40,28 +40,31 @@ public class RoutePath  implements java.io.Serializable {
        this.temperature = temperature;
        this.humidity = humidity;
     }
-   
-    public Integer getId() {
-        return this.id;
+
+    public Long getId() {
+        return id;
     }
-    
-    public void setId(Integer id) {
+
+    public void setId(Long id) {
         this.id = id;
     }
-    public Integer getDestinyId() {
-        return this.destinyId;
+
+    public Long getDestinyId() {
+        return destinyId;
     }
-    
-    public void setDestinyId(Integer destinyId) {
+
+    public void setDestinyId(Long destinyId) {
         this.destinyId = destinyId;
     }
-    public Integer getExternalId() {
-        return this.externalId;
+
+    public Long getExternalId() {
+        return externalId;
     }
-    
-    public void setExternalId(Integer externalId) {
+
+    public void setExternalId(Long externalId) {
         this.externalId = externalId;
     }
+    
     public int getUserId() {
         return this.userId;
     }

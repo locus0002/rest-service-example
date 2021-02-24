@@ -60,7 +60,7 @@ public class PathResourceService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{type}/{destinyid}")
-    public Response getPath(@PathParam("type") String type, @PathParam("destinyid") Integer id){
+    public Response getPath(@PathParam("type") String type, @PathParam("destinyid") Long id){
         
         PathDAOImpl operationsDAO = new PathDAOImpl();
         Session hibernateSession = utils.Util.getCurrentSession();

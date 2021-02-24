@@ -31,7 +31,7 @@ public class PathDAOImpl extends CrudDAOImpl{
         }
     }
     
-    public List<RoutePath> getPathById(Integer id, boolean byExternal, Session hibernateSession) {
+    public List<RoutePath> getPathById(Long id, boolean byExternal, Session hibernateSession) {
         this.transaccion = hibernateSession.beginTransaction();
         this.criterios = hibernateSession.createCriteria(RoutePath.class);
         this.criterios.add( Restrictions.eq((byExternal ? "externalId" : "destinyId"), id));

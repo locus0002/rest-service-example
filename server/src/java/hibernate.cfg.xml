@@ -44,8 +44,8 @@ Contributor(s):
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/tracking_gps</property>
-        <property name="hibernate.connection.username">xxxx</property>
-        <property name="hibernate.connection.password">xxxx</property>
+        <property name="hibernate.connection.username">xxx</property>
+        <property name="hibernate.connection.password">xxx</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
         <property name="hibernate.c3p0.acquire_increment">1</property>

@@ -22,10 +22,10 @@ CREATE TABLE DESTINY (
 );
 
 CREATE TABLE ROUTE_PATH (
-	id int NOT NULL AUTO_INCREMENT,
+	id bigint NOT NULL AUTO_INCREMENT,
     type enum('AUTOMATIC', 'ON_DEMAND') not null,
-	destiny_id int null,
-	external_id int null,
+	destiny_id bigint null,
+	external_id bigint null,
 	user_id int not null,
 	longitude decimal(20,10) null,
 	latitude decimal(20,10) null,

@@ -4,17 +4,17 @@
 <!-- Generated 6/11/2020 01:22:38 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="models.RoutePath" table="route_path" catalog="tracking_gps" optimistic-lock="version">
-        <id name="id" type="java.lang.Integer">
+        <id name="id" type="java.lang.Long">
             <column name="id" />
             <generator class="identity" />
         </id>
         <property name="type" type="string">
             <column name="type" length="10" />
         </property>
-        <property name="destinyId" type="java.lang.Integer">
+        <property name="destinyId" type="java.lang.Long">
             <column name="destiny_id" />
         </property>
-        <property name="externalId" type="java.lang.Integer">
+        <property name="externalId" type="java.lang.Long">
             <column name="external_id" />
         </property>
         <property name="userId" type="int">
