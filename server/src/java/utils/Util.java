@@ -13,7 +13,7 @@ import org.hibernate.service.ServiceRegistry;
 
 /**
  *
- * @author VLAC
+ * @author Vladimir Aca
  */
 public class Util {
     private static final SessionFactory sessionFactory;

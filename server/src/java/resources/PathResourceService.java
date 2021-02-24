@@ -22,7 +22,7 @@ import org.hibernate.Session;
 
 /**
  *
- * @author vlac sauce
+ * @author Vladimir Aca
  */
 @Path("/path")
 public class PathResourceService {
