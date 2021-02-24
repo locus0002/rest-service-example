@@ -32,4 +32,4 @@ I also shared the workspace of [Insomnia](https://insomnia.rest/download/#window
 
 ## Intregation
 
-I developed a SPA to use this web services as backend. You can find the angular project [here](https://github.com/locus0002/markers-n-polylines)
+I developed a SPA to use these web services as a backend. You can find the angular project [here](https://github.com/locus0002/markers-n-polylines)
