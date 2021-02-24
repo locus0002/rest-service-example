@@ -1,0 +1,202 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-02-24T22:45:05.138Z",
+  "__export_source": "insomnia.desktop.app:v2020.5.2",
+  "resources": [
+    {
+      "_id": "req_230584063a084134a3c781db52c74c0a",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1604690676613,
+      "created": 1604690671089,
+      "url": "{{ HOST }}api/path/ondemand/1",
+      "name": "Path ON_DEMAND",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1604690671089,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "parentId": null,
+      "modified": 1604688780301,
+      "created": 1604688780301,
+      "name": "GPS_Tracking",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_84c8e5167c1743abbd39dcf64b732431",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1614066959022,
+      "created": 1604690610215,
+      "url": "{{ HOST }}api/path/automatic/1614066736580",
+      "name": "Path AUTOMATICO",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1604690610215,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_25989b601b8d4356add5751e2e41b735",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1614020013588,
+      "created": 1604690525320,
+      "url": "{{ HOST }}api/path/position/2",
+      "name": "New Position-AUTOMATIC",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "[\n\t{\n\t\t\"externalId\":3,\n\t\t\"userId\": 1,\n\t\t\"longitude\": \"45.784512\",\n\t\t\"latitude\": \"45.784512\",\n\t\t\"speed\": \"34.45452\",\n\t\t\"temperature\": \"34.45452\",\n\t\t\"humidity\": \"34.45452\",\n\t\t\"timeStamp\": \"1604689863665\"\n\t}\n]"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_918741eaf076427d8850f0a6d7529fde"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1604690525320,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_42f2672ceb6a4cf08d9ef623c34af787",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1614019917255,
+      "created": 1604689622184,
+      "url": "{{ HOST }}api/path/position/1",
+      "name": "New Position",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "[\n\t{\n\t\t\"destinyId\":2,\n\t\t\"userId\": 1,\n\t\t\"longitude\": \"45.784512\",\n\t\t\"latitude\": \"45.784512\",\n\t\t\"speed\": \"34.45452\",\n\t\t\"temperature\": \"34.45452\",\n\t\t\"humidity\": \"34.45452\",\n\t\t\"timeStamp\": \"1604689863665\"\n\t}\n]"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_3a3ac0cb40434e7ca610883061be62ce"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1604689622184,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_acfdc241739642e2a88e160e4d749fb9",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1604688933838,
+      "created": 1604688896798,
+      "url": "{{ HOST }}api/destiny/new",
+      "name": "New Destiny",
+      "description": "",
+      "method": "POST",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_b3daaa3db51a45b0a9295bd603225013"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1604688896798,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_19885e698d90d889ad4a76721327abfba61181c5",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1604688780415,
+      "created": 1604688780415,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1604688780415,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_19885e698d90d889ad4a76721327abfba61181c5",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1604688780418,
+      "created": 1604688780418,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_f46b44ee28ee449dad2db5d5a15a3a04",
+      "parentId": "wrk_3a225e4ef74944c08bdc6f04920b1a04",
+      "modified": 1604688780308,
+      "created": 1604688780308,
+      "fileName": "GPS_Tracking",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_3425d982868d40ab887129e2c78ed534",
+      "parentId": "env_19885e698d90d889ad4a76721327abfba61181c5",
+      "modified": 1614016720175,
+      "created": 1604688795138,
+      "name": "Localhost",
+      "data": { "HOST": "http://localhost:8080/rest.service.example/" },
+      "dataPropertyOrder": { "&": ["HOST"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1604688795138,
+      "_type": "environment"
+    }
+  ]
+}
